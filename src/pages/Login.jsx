@@ -28,7 +28,7 @@ const Login = ({ onLogin }) => {
         return
       }
 
-      if (data.password_hash !== password)) {
+      if (data.password_hash !== password) {
         setErrore('Credenziali non valide')
         setCaricamento(false)
         return
