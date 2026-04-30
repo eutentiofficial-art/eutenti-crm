@@ -19,7 +19,7 @@ const Login = ({ onLogin }) => {
         .from('admin_pannello')
         .select('*')
         .eq('email', email.trim().toLowerCase())
-        .eq('attivo', true)
+        .eq('bloccato', false)
         .single()
 
       if (error || !data) {
